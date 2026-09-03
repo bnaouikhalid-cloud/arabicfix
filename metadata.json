@@ -1,0 +1,6 @@
+{
+  "name": "ArabicFix",
+  "description": "Free online toolbox for fixing, cleaning, converting, and formatting Arabic text directly in your browser.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

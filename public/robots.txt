@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://arabicfix.com/sitemap.xml
