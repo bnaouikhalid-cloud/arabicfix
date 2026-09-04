@@ -6,15 +6,16 @@ const THEME_KEY = 'arabicfix-theme';
 
 export function useTheme() {
   const [theme, setTheme] = useState<Theme>(() => {
-    // Check localStorage first
-    const saved = localStorage.getItem(THEME_KEY);
-    if (saved) {
-      return saved as Theme;
-    }
-    // Check system preference
+    // Check localStorage first (only on client)
     if (typeof window !== 'undefined') {
+      const saved = window.localStorage.getItem(THEME_KEY);
+      if (saved) {
+        return saved as Theme;
+      }
+      // Check system preference
       return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
     }
+    // Default to light during SSR
     return 'light';
   });
 
