@@ -74,7 +74,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ar" dir="rtl" className="scroll-smooth">
-      <body className="bg-[#F8FAFC] text-[#111827] min-h-screen flex flex-col font-sans antialiased selection:bg-blue-100 selection:text-blue-900">
+      <body className="bg-[var(--background)] text-[var(--foreground)] min-h-screen flex flex-col font-sans antialiased selection:bg-[var(--primary)] selection:text-[var(--primary-foreground)]">
         <LanguageProvider>
           <Header />
           <main className="flex-1">{children}</main>

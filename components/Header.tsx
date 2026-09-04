@@ -3,12 +3,14 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Globe, Menu, X, Shield, Sparkles, ArrowRight, ArrowLeft } from 'lucide-react';
+import { Globe, Menu, X, Shield, Sparkles, ArrowRight, ArrowLeft, Moon, Sun } from 'lucide-react';
 import { useLanguage } from './LanguageContext';
+import { useTheme } from '../lib/theme';
 
 export const Header: React.FC = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const { lang, toggleLang, isAr } = useLanguage();
+  const { theme, toggleTheme } = useTheme();
   const pathname = usePathname() || '/';
 
   const navItems = [
@@ -33,7 +35,7 @@ export const Header: React.FC = () => {
   ];
 
   return (
-    <header className="sticky top-0 z-50 bg-white border-b border-[#E2E8F0] h-16 transition-colors">
+    <header className="sticky top-0 z-50 bg-[var(--background)] border-b border-[var(--border)] h-16 transition-colors">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full">
         <div className="flex items-center justify-between h-full">
           {/* Logo matching Bold Typography design */}
@@ -79,7 +81,7 @@ export const Header: React.FC = () => {
             </div>
           </nav>
 
-          {/* Right Controls: Language & CTA */}
+          {/* Right Controls: Language, Theme & CTA */}
           <div className="flex items-center gap-3">
             {/* Language Switcher */}
             <button
@@ -91,6 +93,17 @@ export const Header: React.FC = () => {
             >
               <Globe className="w-3.5 h-3.5 text-[#2563EB]" />
               <span>{isAr ? 'English / العربية' : 'العربية / English'}</span>
+            </button>
+
+            {/* Theme Toggle */}
+            <button
+              id="theme-toggle-btn"
+              type="button"
+              className="p-2 rounded-lg text-[#64748B] hover:text-[#111827] hover:bg-slate-100 focus:outline-none flex items-center gap-1"
+              title={isAr ? 'تبديل الوضع الليلي' : 'Toggle dark mode'}
+              aria-label={isAr ? 'تبديل الوضع الليلي' : 'Toggle dark mode'}
+            >
+              {theme === 'dark' ? <Sun className="w-4 h-4" /> : <Moon className="w-4 h-4" />}
             </button>
 
             {/* Main CTA */}

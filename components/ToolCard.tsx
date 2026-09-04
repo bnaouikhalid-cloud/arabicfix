@@ -57,7 +57,7 @@ export const ToolCard: React.FC<ToolCardProps> = ({ tool, currentLang = 'ar' }) 
     <Link
       href={`/tools/${tool.slug}`}
       id={`tool-card-${tool.slug}`}
-      className="bg-white border border-[#E2E8F0] p-5 rounded-2xl shadow-xs hover:shadow-md hover:border-[#2563EB]/50 transition-all duration-200 cursor-pointer relative group flex flex-col justify-between block text-start"
+      className="bg-[var(--card-bg)] border border-[var(--border)] p-5 rounded-2xl shadow-xs hover:shadow-md hover:border-[var(--primary)]/50 transition-all duration-200 cursor-pointer relative group flex flex-col justify-between block text-start"
     >
       <div>
         {/* Top bar with Icon & Badges */}

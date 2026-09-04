@@ -266,7 +266,7 @@ export const ToolWorkbench: React.FC<ToolWorkbenchProps> = ({ tool }) => {
   return (
     <div className="space-y-6">
       {/* Tool-specific Options Bar */}
-      <div className="bg-white border border-[#E2E8F0] rounded-2xl p-4 sm:p-5 shadow-xs">
+      <div className="bg-[var(--card-bg)] border border-[#E2E8F0] rounded-2xl p-4 sm:p-5 shadow-xs">
         <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-[#64748B] mb-3">
           <SlidersHorizontal className="w-3.5 h-3.5 text-[#2563EB]" />
           <span>{isAr ? 'خيارات الأداة' : 'Tool Settings'}</span>
@@ -363,7 +363,7 @@ export const ToolWorkbench: React.FC<ToolWorkbenchProps> = ({ tool }) => {
                 onClick={() => setNumberMode('westernToIndic')}
                 className={`px-3 py-1.5 rounded-md transition-all ${
                   numberMode === 'westernToIndic'
-                    ? 'bg-white text-[#2563EB] shadow-xs font-bold'
+                    ? 'bg-[var(--card-bg)] text-[#2563EB] shadow-xs font-bold'
                     : 'text-slate-600 hover:text-slate-900'
                 }`}
               >
@@ -374,7 +374,7 @@ export const ToolWorkbench: React.FC<ToolWorkbenchProps> = ({ tool }) => {
                 onClick={() => setNumberMode('indicToWestern')}
                 className={`px-3 py-1.5 rounded-md transition-all ${
                   numberMode === 'indicToWestern'
-                    ? 'bg-white text-[#2563EB] shadow-xs font-bold'
+                    ? 'bg-[var(--card-bg)] text-[#2563EB] shadow-xs font-bold'
                     : 'text-slate-600 hover:text-slate-900'
                 }`}
               >
@@ -385,7 +385,7 @@ export const ToolWorkbench: React.FC<ToolWorkbenchProps> = ({ tool }) => {
                 onClick={() => setNumberMode('westernToPersian')}
                 className={`px-3 py-1.5 rounded-md transition-all ${
                   numberMode === 'westernToPersian'
-                    ? 'bg-white text-[#2563EB] shadow-xs font-bold'
+                    ? 'bg-[var(--card-bg)] text-[#2563EB] shadow-xs font-bold'
                     : 'text-slate-600 hover:text-slate-900'
                 }`}
               >
@@ -396,7 +396,7 @@ export const ToolWorkbench: React.FC<ToolWorkbenchProps> = ({ tool }) => {
                 onClick={() => setNumberMode('persianToWestern')}
                 className={`px-3 py-1.5 rounded-md transition-all ${
                   numberMode === 'persianToWestern'
-                    ? 'bg-white text-[#2563EB] shadow-xs font-bold'
+                    ? 'bg-[var(--card-bg)] text-[#2563EB] shadow-xs font-bold'
                     : 'text-slate-600 hover:text-slate-900'
                 }`}
               >
@@ -417,7 +417,7 @@ export const ToolWorkbench: React.FC<ToolWorkbenchProps> = ({ tool }) => {
                   onClick={() => setReverseMode('perLine')}
                   className={`px-3 py-1.5 rounded-md transition-all ${
                     reverseMode === 'perLine'
-                      ? 'bg-white text-[#2563EB] shadow-xs font-bold'
+                      ? 'bg-[var(--card-bg)] text-[#2563EB] shadow-xs font-bold'
                       : 'text-slate-600 hover:text-slate-900'
                   }`}
                 >
@@ -428,7 +428,7 @@ export const ToolWorkbench: React.FC<ToolWorkbenchProps> = ({ tool }) => {
                   onClick={() => setReverseMode('fullReverse')}
                   className={`px-3 py-1.5 rounded-md transition-all ${
                     reverseMode === 'fullReverse'
-                      ? 'bg-white text-[#2563EB] shadow-xs font-bold'
+                      ? 'bg-[var(--card-bg)] text-[#2563EB] shadow-xs font-bold'
                       : 'text-slate-600 hover:text-slate-900'
                   }`}
                 >
@@ -439,7 +439,7 @@ export const ToolWorkbench: React.FC<ToolWorkbenchProps> = ({ tool }) => {
                   onClick={() => setReverseMode('reverseLines')}
                   className={`px-3 py-1.5 rounded-md transition-all ${
                     reverseMode === 'reverseLines'
-                      ? 'bg-white text-[#2563EB] shadow-xs font-bold'
+                      ? 'bg-[var(--card-bg)] text-[#2563EB] shadow-xs font-bold'
                       : 'text-slate-600 hover:text-slate-900'
                   }`}
                 >
@@ -466,7 +466,7 @@ export const ToolWorkbench: React.FC<ToolWorkbenchProps> = ({ tool }) => {
                   onClick={() => setInvisibleMode('safe')}
                   className={`px-3 py-1.5 rounded-md transition-all ${
                     invisibleMode === 'safe'
-                      ? 'bg-white text-[#2563EB] shadow-xs font-bold'
+                      ? 'bg-[var(--card-bg)] text-[#2563EB] shadow-xs font-bold'
                       : 'text-slate-600 hover:text-slate-900'
                   }`}
                 >
@@ -477,7 +477,7 @@ export const ToolWorkbench: React.FC<ToolWorkbenchProps> = ({ tool }) => {
                   onClick={() => setInvisibleMode('aggressive')}
                   className={`px-3 py-1.5 rounded-md transition-all ${
                     invisibleMode === 'aggressive'
-                      ? 'bg-white text-[#2563EB] shadow-xs font-bold'
+                      ? 'bg-[var(--card-bg)] text-[#2563EB] shadow-xs font-bold'
                       : 'text-slate-600 hover:text-slate-900'
                   }`}
                 >
@@ -655,7 +655,7 @@ export const ToolWorkbench: React.FC<ToolWorkbenchProps> = ({ tool }) => {
                   onClick={() => setExtractMode('arabicOnly')}
                   className={`px-3 py-1.5 rounded-md transition-all ${
                     extractMode === 'arabicOnly'
-                      ? 'bg-white text-[#2563EB] shadow-xs font-bold'
+                      ? 'bg-[var(--card-bg)] text-[#2563EB] shadow-xs font-bold'
                       : 'text-slate-600 hover:text-slate-900'
                   }`}
                 >
@@ -666,7 +666,7 @@ export const ToolWorkbench: React.FC<ToolWorkbenchProps> = ({ tool }) => {
                   onClick={() => setExtractMode('latinOnly')}
                   className={`px-3 py-1.5 rounded-md transition-all ${
                     extractMode === 'latinOnly'
-                      ? 'bg-white text-[#2563EB] shadow-xs font-bold'
+                      ? 'bg-[var(--card-bg)] text-[#2563EB] shadow-xs font-bold'
                       : 'text-slate-600 hover:text-slate-900'
                   }`}
                 >
@@ -677,7 +677,7 @@ export const ToolWorkbench: React.FC<ToolWorkbenchProps> = ({ tool }) => {
                   onClick={() => setExtractMode('numbersOnly')}
                   className={`px-3 py-1.5 rounded-md transition-all ${
                     extractMode === 'numbersOnly'
-                      ? 'bg-white text-[#2563EB] shadow-xs font-bold'
+                      ? 'bg-[var(--card-bg)] text-[#2563EB] shadow-xs font-bold'
                       : 'text-slate-600 hover:text-slate-900'
                   }`}
                 >
@@ -688,7 +688,7 @@ export const ToolWorkbench: React.FC<ToolWorkbenchProps> = ({ tool }) => {
                   onClick={() => setExtractMode('arabicAndNumbers')}
                   className={`px-3 py-1.5 rounded-md transition-all ${
                     extractMode === 'arabicAndNumbers'
-                      ? 'bg-white text-[#2563EB] shadow-xs font-bold'
+                      ? 'bg-[var(--card-bg)] text-[#2563EB] shadow-xs font-bold'
                       : 'text-slate-600 hover:text-slate-900'
                   }`}
                 >
@@ -721,7 +721,7 @@ export const ToolWorkbench: React.FC<ToolWorkbenchProps> = ({ tool }) => {
                   onClick={() => setKeyboardDirection('enToAr')}
                   className={`px-3 py-1.5 rounded-md transition-all ${
                     keyboardDirection === 'enToAr'
-                      ? 'bg-white text-[#2563EB] shadow-xs font-bold'
+                      ? 'bg-[var(--card-bg)] text-[#2563EB] shadow-xs font-bold'
                       : 'text-slate-600 hover:text-slate-900'
                   }`}
                 >
@@ -732,7 +732,7 @@ export const ToolWorkbench: React.FC<ToolWorkbenchProps> = ({ tool }) => {
                   onClick={() => setKeyboardDirection('arToEn')}
                   className={`px-3 py-1.5 rounded-md transition-all ${
                     keyboardDirection === 'arToEn'
-                      ? 'bg-white text-[#2563EB] shadow-xs font-bold'
+                      ? 'bg-[var(--card-bg)] text-[#2563EB] shadow-xs font-bold'
                       : 'text-slate-600 hover:text-slate-900'
                   }`}
                 >
@@ -764,7 +764,7 @@ export const ToolWorkbench: React.FC<ToolWorkbenchProps> = ({ tool }) => {
               </span>
             </div>
             <div className="flex items-center gap-1.5 shrink-0">
-              <span className="bg-white px-2 py-1 rounded border border-slate-200 font-mono text-[11px] text-slate-800">
+              <span className="bg-[var(--card-bg)] px-2 py-1 rounded border border-slate-200 font-mono text-[11px] text-slate-800">
                 3 = ع | 7 = ح | 5 = خ | 9 = ص
               </span>
             </div>
@@ -820,7 +820,7 @@ export const ToolWorkbench: React.FC<ToolWorkbenchProps> = ({ tool }) => {
       {/* Primary 2-Panel Editor Workbench */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         {/* INPUT PANEL */}
-        <div className="bg-white border border-[#E2E8F0] rounded-2xl flex flex-col shadow-xs overflow-hidden focus-within:border-[#2563EB] focus-within:ring-2 focus-within:ring-[#2563EB]/10 transition-all">
+        <div className="bg-[var(--card-bg)] border border-[#E2E8F0] rounded-2xl flex flex-col shadow-xs overflow-hidden focus-within:border-[#2563EB] focus-within:ring-2 focus-within:ring-[#2563EB]/10 transition-all">
           {/* Panel Header */}
           <div className="flex items-center justify-between px-4 py-3 bg-[#F8FAFC] border-b border-[#E2E8F0] text-xs font-bold text-[#111827]">
             <div className="flex items-center gap-2">
@@ -835,7 +835,7 @@ export const ToolWorkbench: React.FC<ToolWorkbenchProps> = ({ tool }) => {
                 id="btn-paste-input"
                 onClick={handlePaste}
                 title={isAr ? 'لصق من الحافظة' : 'Paste from clipboard'}
-                className="px-2.5 py-1 rounded-lg bg-white hover:bg-slate-100 border border-[#E2E8F0] text-[#111827] transition-colors flex items-center gap-1 text-[11px] font-semibold cursor-pointer"
+                className="px-2.5 py-1 rounded-lg bg-[var(--card-bg)] hover:bg-slate-100 border border-[#E2E8F0] text-[#111827] transition-colors flex items-center gap-1 text-[11px] font-semibold cursor-pointer"
               >
                 <ClipboardPaste className="w-3.5 h-3.5" />
                 <span className="hidden sm:inline">{isAr ? 'لصق' : 'Paste'}</span>
@@ -846,7 +846,7 @@ export const ToolWorkbench: React.FC<ToolWorkbenchProps> = ({ tool }) => {
                 id="btn-load-sample"
                 onClick={() => setInputText(tool.defaultInput)}
                 title={isAr ? 'تحميل نص تجريبي' : 'Load sample text'}
-                className="px-2.5 py-1 rounded-lg bg-white hover:bg-slate-100 border border-[#E2E8F0] text-[#111827] transition-colors flex items-center gap-1 text-[11px] font-semibold cursor-pointer"
+                className="px-2.5 py-1 rounded-lg bg-[var(--card-bg)] hover:bg-slate-100 border border-[#E2E8F0] text-[#111827] transition-colors flex items-center gap-1 text-[11px] font-semibold cursor-pointer"
               >
                 <RefreshCw className="w-3.5 h-3.5" />
                 <span className="hidden sm:inline">{isAr ? 'مثال' : 'Sample'}</span>
@@ -857,7 +857,7 @@ export const ToolWorkbench: React.FC<ToolWorkbenchProps> = ({ tool }) => {
                 id="btn-clear-input"
                 onClick={() => setInputText('')}
                 title={isAr ? 'مسح النص' : 'Clear text'}
-                className="px-2.5 py-1 rounded-lg bg-white hover:bg-rose-50 border border-[#E2E8F0] hover:border-rose-200 text-[#64748B] hover:text-rose-600 transition-colors flex items-center gap-1 text-[11px] font-semibold cursor-pointer"
+                className="px-2.5 py-1 rounded-lg bg-[var(--card-bg)] hover:bg-rose-50 border border-[#E2E8F0] hover:border-rose-200 text-[#64748B] hover:text-rose-600 transition-colors flex items-center gap-1 text-[11px] font-semibold cursor-pointer"
               >
                 <Trash2 className="w-3.5 h-3.5" />
                 <span className="hidden sm:inline">{isAr ? 'مسح' : 'Clear'}</span>
@@ -904,7 +904,7 @@ export const ToolWorkbench: React.FC<ToolWorkbenchProps> = ({ tool }) => {
         </div>
 
         {/* OUTPUT PANEL */}
-        <div className="bg-white border border-[#E2E8F0] rounded-2xl flex flex-col shadow-xs overflow-hidden focus-within:border-[#2563EB] focus-within:ring-2 focus-within:ring-[#2563EB]/10 transition-all">
+        <div className="bg-[var(--card-bg)] border border-[#E2E8F0] rounded-2xl flex flex-col shadow-xs overflow-hidden focus-within:border-[#2563EB] focus-within:ring-2 focus-within:ring-[#2563EB]/10 transition-all">
           {/* Panel Header */}
           <div className="flex items-center justify-between px-4 py-3 bg-[#F8FAFC] border-b border-[#E2E8F0] text-xs font-bold text-[#111827]">
             <div className="flex items-center gap-2">
@@ -921,7 +921,7 @@ export const ToolWorkbench: React.FC<ToolWorkbenchProps> = ({ tool }) => {
                   id="btn-swap-panels"
                   onClick={handleSwap}
                   title={isAr ? 'تبديل المدخل والمخرج' : 'Swap Input and Output'}
-                  className="px-2.5 py-1.5 rounded-lg bg-white hover:bg-slate-100 border border-[#E2E8F0] text-[#111827] text-xs font-semibold flex items-center gap-1 transition-colors cursor-pointer"
+                  className="px-2.5 py-1.5 rounded-lg bg-[var(--card-bg)] hover:bg-slate-100 border border-[#E2E8F0] text-[#111827] text-xs font-semibold flex items-center gap-1 transition-colors cursor-pointer"
                 >
                   <ArrowLeftRight className="w-3.5 h-3.5" />
                   <span className="hidden sm:inline">{isAr ? 'تبديل' : 'Swap'}</span>
@@ -935,7 +935,7 @@ export const ToolWorkbench: React.FC<ToolWorkbenchProps> = ({ tool }) => {
                 onClick={handleDownload}
                 disabled={!outputText && tool.slug !== 'arabic-word-counter'}
                 title={isAr ? 'تحميل كملف نصي' : 'Download as .txt'}
-                className="px-2.5 py-1.5 rounded-lg bg-white hover:bg-slate-100 border border-[#E2E8F0] disabled:opacity-50 text-[#111827] text-xs font-semibold flex items-center gap-1 transition-colors cursor-pointer"
+                className="px-2.5 py-1.5 rounded-lg bg-[var(--card-bg)] hover:bg-slate-100 border border-[#E2E8F0] disabled:opacity-50 text-[#111827] text-xs font-semibold flex items-center gap-1 transition-colors cursor-pointer"
               >
                 <Download className="w-3.5 h-3.5" />
                 <span className="hidden sm:inline">.txt</span>
