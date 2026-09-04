@@ -16,6 +16,21 @@
     --accent: #2563EB;
     --accent-foreground: #FFFFFF;
     --radius: 0.5rem;
+    --secondary-foreground: #64748B;
+    --icon-bg: #EFF6FF;
+    --icon-text: #2563EB;
+    --badge-bg: #EFF6FF;
+    --badge-text: #2563EB;
+    --badge-border: #BFDBFE;
+    --success-bg: #ECFDF5;
+    --success-text: #15803D;
+    --success-border: #A7F3D0;
+    --swap-button-bg: #EFF6FF;
+    --swap-button-text: #2563EB;
+    --swap-button-hover-bg: #DBEAFE;
+    --swap-button-border: #BFDBFE;
+    --strip-bg: #111827;
+    --strip-foreground: #F8FAFC;
   }
 
   .dark {
@@ -30,6 +45,20 @@
     --primary-hover: #2563EB;
     --accent: #3B82F6;
     --accent-foreground: #FFFFFF;
+    --strip-bg: #F8FAFC;
+    --strip-foreground: #111827;
+    --icon-bg: #3B82F6/10;
+    --icon-text: #3B82F6;
+    --badge-bg: #3B82F6/10;
+    --badge-text: #3B82F6;
+    --badge-border: #3B82F6/20;
+    --success-bg: #10B981/10;
+    --success-text: #10B981;
+    --success-border: #10B981/20;
+    --swap-button-bg: #3B82F6/10;
+    --swap-button-text: #3B82F6;
+    --swap-button-hover-bg: #3B82F6/20;
+    --swap-button-border: #3B82F6/20;
   }
 
   html[lang="ar"] body {
